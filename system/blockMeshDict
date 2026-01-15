@@ -49,7 +49,7 @@ boundary
         );
     }
 
-    empty
+    walls
     {   
         type    empty;
         faces

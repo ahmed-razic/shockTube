@@ -23,14 +23,17 @@ defaultValues
 
 zones
 {
-    type        box;
-
-    box         (0 -1 -1) (5 1 1);
-
-    values
+    lowPressure
     {
-        T       278.746;
-        p       10000;
+        type        box;
+    
+        box         (0 -1 -1) (5 1 1);
+    
+        values
+        {
+            T       278.746;
+            p       10000;
+        }
     }
 }
 
