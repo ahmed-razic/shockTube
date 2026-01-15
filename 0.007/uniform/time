@@ -8,26 +8,23 @@
 FoamFile
 {
     format      ascii;
-    class       volScalarField;
-    object      p;
+    class       dictionary;
+    location    "0.007/uniform";
+    object      time;
 }
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-dimensions      [1 -1 -2 0 0 0 0];
+beginTime       0;
 
-internalField   uniform 0;
+value           0.0070000000000006047;
 
-boundaryField
-{
-    sides
-    {
-        type    zeroGradient;        
-    }
+name            "0.007";
 
-    walls
-    {   
-        type    empty;
-    }
-}
+index           7000;
+
+deltaT          1e-06;
+
+deltaT0         1e-06;
+
 
 // ************************************************************************* //
