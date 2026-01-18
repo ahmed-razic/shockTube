@@ -17,23 +17,22 @@ FoamFile
 defaultValues
 {
     U           (0 0 0);
-    p           10000;
-    T           293.15;
+    T           348.432;
+    p           100000;
 }
 
 zones
 {
-    highPressure
+    lowPressure
     {
-        type    box;
-
-        box     (-1 -1 -1) (1 1 1);
-
+        type        box;
+    
+        box         (0 -1 -1) (5 1 1);
+    
         values
         {
-            U   (0 0 0);
-            p   500000;
-            T   393.15;   
+            T       278.746;
+            p       10000;
         }
     }
 }
