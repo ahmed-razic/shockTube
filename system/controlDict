@@ -13,29 +13,29 @@ FoamFile
 }
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-application     foamRun;
+application         foamRun;
 
-solver          fluid;
+solver              fluid;
 
-startFrom       startTime;
+startFrom           startTime;
 
-startTime       0;
+startTime           0;
 
-stopAt          endTime;
+stopAt              endTime;
 
-endTime         0.007;
+endTime             0.007;
 
-deltaT          1e-6;
+deltaT              1e-6;
 
-writeControl    runTime;
+writeControl        runTime;
 
-writeInterval   0.001;
+writeInterval       0.001;
 
-purgeWrite      0;
+purgeWrite          0;
 
-writeFormat     ascii;
+writeFormat         ascii;
 
-writePrecision  6;
+writePrecision      6;
 
 writeCompression    false;
 
